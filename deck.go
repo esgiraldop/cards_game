@@ -29,3 +29,11 @@ func (d deck) print() {
 func deal(d deck, handSize int) (deck, deck) {
 	return d[:handSize], d[handSize:]
 }
+
+func (d deck) toString() string {
+	var ans string
+	for _, card := range d {
+		ans = ans + "\n" + card
+	}
+	return ans
+}

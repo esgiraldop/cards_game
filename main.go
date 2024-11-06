@@ -8,6 +8,7 @@ func main() {
 	hand, remainingDeck := deal(cards, 5)
 
 	hand.print()
-	fmt.Println("\n")
 	remainingDeck.print()
+	handToFile := hand.toString()
+	fmt.Println("handToFile: ", handToFile)
 }
